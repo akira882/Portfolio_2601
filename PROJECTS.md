@@ -14,50 +14,57 @@ React Nativeエンジニアとして**即戦力性**を証明するため、以�
 
 ---
 
-## 📊 3つのプロジェクト構成
+## 📊 プロジェクト構成
 
-| プロジェクト | 目的 | 主要技術 | アピールポイント |
-|-------------|------|---------|----------------|
-| **ClearTask** | 実務レベルのアプリ開発能力証明 | React Native, TypeScript, Firebase | 認知負荷を考慮したUX設計、リアルタイム同期 |
-| **SmartHire** | AI連携・外部API統合能力証明 | OpenAI GPT-4, 音声認識 | 複雑な外部API連携、ストリーミング処理 |
-| **Learning Journey** | 継続的学習姿勢の可視化 | 学習記録、技術検証 | 技術的成長過程、問題解決の記録 |
+| プロジェクト | 状態 | 目的 | 主要技術 | アピールポイント |
+|-------------|------|------|---------|----------------|
+| **ClearTask (Web版)** | ✅ **実装済み** | 実務レベルのアプリ開発能力証明 | HTML/CSS/JavaScript, TypeScript, Firebase | 認知負荷を考慮したUX設計、Firebase統合 |
+| **ClearTask (React Native版)** | 📋 計画中 | クロスプラットフォーム開発能力証明 | React Native, TypeScript, Firebase | iOS/Android対応、Web版との統一設計 |
+| **SmartHire** | 📋 計画中 | AI連携・外部API統合能力証明 | React Native, OpenAI GPT-4 | 複雑な外部API連携、ストリーミング処理 |
 
 ---
 
-## 📱 Project 1: ClearTask
+## 📱 Project 1: ClearTask (Web版) ✅ **実装済み**
 
-### **認知負荷を最小化するタスク管理アプリ**
+**リポジトリ**: [https://github.com/akira882/PwD-Task-Management-App](https://github.com/akira882/PwD-Task-Management-App)
+
+### **認知障害者向けシンプルなタスク管理Webアプリケーション**
 
 #### 🎯 解決する課題
 
-**問題**: 既存のタスク管理アプリは、複数タスクの同時表示により認知負荷が高く、ADHD・高次脳機能障がい当事者には使いづらい
+**問題**: 発達障害や注意欠如多動症を持つユーザーが、既存のタスク管理ツールの複雑さにストレスを感じ、効果的なタスク管理が困難
 
-**解決策**: 1タスク1画面表示により、集中力を維持しながらタスクを処理できる環境を提供
+**解決策**:
+- **3ステップでタスク追加** - 複雑な操作を排除
+- **優先度自動計算** - 重要度×3+緊度による自動スコアリング
+- **視覚的フィードバック** - 進捗バー、期限アラートで達成感を可視化
 
 ---
 
-#### 🛠️ 技術スタック
+#### 🛠️ 技術スタック（実装済み）
 
 ```typescript
 Frontend:
-  - React Native (Expo SDK 51)
-  - TypeScript 5.0
-  - React Navigation v6
-  - React Native Reanimated (アニメーション)
+  - HTML5, CSS3
+  - JavaScript (ES6+)
+  - TypeScript 34.0%
 
 Backend:
-  - Firebase Firestore (NoSQLデータベース)
-  - Firebase Authentication (Email/Password認証)
+  - Firebase Authentication v10.7.1 (Google/メール認証)
+  - Cloud Firestore v10.7.1 (NoSQLデータベース)
+  - Firebase Hosting
 
-State Management:
-  - Context API + useReducer
-  - Custom Hooks
-
-Development Tools:
-  - ESLint + Prettier (Airbnb Style Guide準拠)
-  - Jest + React Native Testing Library
-  - Detox (E2Eテスト)
+Security & Accessibility:
+  - XSS対策実装
+  - WCAG 2.1 AAレベル準拠
 ```
+
+**開発状況**:
+- ✅ Firebase統合完了（13コミット）
+- ✅ 認証機能実装（Google/メール）
+- ✅ 基本CRUD操作完了
+- 🔄 UI/UX改善中
+- 📅 最終更新: 2025-12-26
 
 ---
 

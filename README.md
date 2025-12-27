@@ -35,73 +35,62 @@ React Nativeを用いたクロスプラットフォームモバイルアプリ�
 
 ## 🚀 Portfolio Projects
 
-### 1. [ClearTask - 認知負荷最小化タスク管理アプリ](https://github.com/akira882/portfolio-cleartask)
+### 1. [ClearTask ✓ - 認知障害者向けタスク管理Webアプリ](https://github.com/akira882/PwD-Task-Management-App) 🚀 **実装済み**
 
-**解決する課題**: 既存のタスク管理アプリは、複数タスクの同時表示により認知負荷が高く、ADHD・高次脳機能障がい当事者には使いづらい
+**解決する課題**: 発達障害や注意欠如多動症を持つユーザーが既存のタスク管理ツールの複雑さにストレスを感じ、タスク管理が困難
 
 **主要機能**:
-- 1タスク1画面表示による集中力維持
-- Expo Speech Recognitionによる音声入力
-- Firebaseリアルタイム同期
-- 視覚的進捗バーと称賛メッセージ
+- **3ステップでタスク追加** - シンプルなUI設計
+- **優先度自動計算** - 重要度×3+緊急度による自動スコアリング
+- **視覚的進捗管理** - 進捗バー、期限アラート
+- **Google/メール認証** - Firebase Authentication統合
+- **リアルタイム同期** - Cloud Firestore活用
 
 **技術スタック**:
 ```typescript
-Frontend: React Native (Expo) + TypeScript + React Navigation
-Backend:  Firebase Firestore + Firebase Auth
-State:    Context API + Custom Hooks
-Test:     Jest + React Native Testing Library
+Frontend: HTML5 + CSS3 + JavaScript (ES6+) + TypeScript
+Backend:  Firebase Authentication v10.7.1
+          Cloud Firestore v10.7.1
+Hosting:  Firebase Hosting
+Security: XSS対策、WCAG 2.1 AAレベル準拠
 ```
 
 **実装のポイント**:
-- FlatListの最適化による高速レンダリング
-- useMemo/useCallbackによる不要な再レンダリング抑制
-- TypeScript Genericsを活用した型安全な状態管理
-- ESLint + Prettierによるコード品質管理
+- Firebase統合による認証・データベース実装
+- アクセシビリティ重視（WCAG 2.1 AA準拠）
+- 優先度自動計算アルゴリズム実装
+- セキュリティ対策（XSS防止）
 
-📱 **[デモ動画](./docs/cleartask-demo.gif)** | 📄 **[詳細ドキュメント](https://github.com/akira882/portfolio-cleartask)**
+**開発状況**:
+- ✅ Firebase統合完了
+- ✅ 基本機能実装完了
+- 🔄 UI/UX改善中
+
+📱 **[リポジトリ](https://github.com/akira882/PwD-Task-Management-App)** | 📊 **コード構成**: JavaScript 34.1%, TypeScript 34.0%, CSS 18.2%, HTML 13.7%
 
 ---
 
-### 2. [SmartHire - AI面接準備アプリ](https://github.com/akira882/portfolio-smarthire)
+### 2. 今後の開発予定プロジェクト
+
+#### SmartHire - AI面接準備アプリ（計画中）
 
 **解決する課題**: 就職活動における面接準備の効率化と、障がい者雇用面接特有の課題への対応
 
-**主要機能**:
-- OpenAI GPT-4による模擬面接
-- 音声認識による回答入力
-- フィードバックとスコアリング
-- 面接履歴の管理
-
-**技術スタック**:
-```typescript
-Frontend: React Native (Expo) + TypeScript
-AI/ML:    OpenAI GPT-4 API
-Backend:  Firebase Firestore
-Voice:    Expo Speech Recognition
-```
-
-**実装のポイント**:
-- OpenAI APIのストリーミングレスポンス処理
-- 非同期処理のエラーハンドリング完備
-- カスタムフックによるロジック分離
-- E2Eテスト（Detox）の実装
-
-📱 **[デモ動画](./docs/smarthire-demo.gif)** | 📄 **[詳細ドキュメント](https://github.com/akira882/portfolio-smarthire)**
+**予定技術スタック**:
+- React Native (Expo) + TypeScript
+- OpenAI GPT-4 API
+- Firebase Firestore
 
 ---
 
-### 3. [学習記録・技術検証リポジトリ](https://github.com/akira882/react-native-learning-journey)
+#### React Native版ClearTask（計画中）
 
-**目的**: 技術的深化の過程と継続的学習姿勢の可視化
+**目的**: 既存Web版ClearTaskのモバイルアプリ化によるクロスプラットフォーム開発能力の証明
 
-**内容**:
-- JavaScript/TypeScript基礎から応用までの学習記録
-- React Native公式ドキュメントに基づく段階的学習
-- 週次ミニプロジェクトによる実践
-- トラブルシューティング記録
-
-📚 **[学習進捗](https://github.com/akira882/react-native-learning-journey/blob/main/PROGRESS.md)**
+**予定技術スタック**:
+- React Native (Expo) + TypeScript
+- Firebase (Web版と統一)
+- React Navigation v6
 
 ---
 
