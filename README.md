@@ -249,9 +249,8 @@ Portfolio_2601/
 **小清水晶 (Akira Koshimizu)**
 
 - **GitHub**: [@akira882](https://github.com/akira882)
-- **Email**: your-email@example.com
 - **LinkedIn**: [your-profile](https://linkedin.com/in/your-profile)
-- **Portfolio Site**: [your-portfolio-site.com](https://your-portfolio-site.com)
+- **Portfolio Site**: (https://kec-official-site.vercel.app/),(https://jimbocho-french-positionning-media.vercel.app/)
 
 ---
 
